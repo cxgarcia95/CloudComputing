@@ -2,7 +2,7 @@ version: '3'
 services:
   server:
     build: ./server
-    image: HUB_ID/cloudcomputinggroup114:latest
+    image: antoniodigiovanni/cloudcomputinggroup114:latest
     container_name: cloudcomputinggroup114
     depends_on:
       - "mongodb"
