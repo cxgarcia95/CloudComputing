@@ -1,8 +1,8 @@
 version: '3'
 services:
   server:
-    build: ./server
-    image: HUB_ID/microservice:server
+    #build: ./server
+    image: cxgarcia95/microservice:server
     ports:
       - "3000:3000"
     depends_on:
@@ -10,12 +10,12 @@ services:
       - product-descp-service
       - product-price-service
   hello-world-service:
-    build: ./hello-world-service
-    image: HUB_ID/microservice:hello
+    #build: ./hello-world-service
+    image: cxgarcia95/microservice:hello
   product-descp-service:
-    build: ./product-descp-service
-    image: HUB_ID/microservice:productdescp
+    #build: ./product-descp-service
+    image: cxgarcia95/microservice:productdescp
   product-price-service:
-    build: ./product-price-service
-    image: HUB_ID/microservice:productprice
+    #build: ./product-price-service
+    image: cxgarcia95/microservice:productprice
 
